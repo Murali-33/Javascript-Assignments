@@ -1,0 +1,19 @@
+Usememo:
+
+The useMemo hook in React is used to memoize the result of a computation. It's particularly useful
+when you have a heavy computation that you want to avoid repeating on every render, especially if 
+that computation is not directly related to rendering the UI. useMemo helps optimize the performance 
+of your components by memoizing the result and only recomputing it when the dependencies change.
+
+
+When to use useMemo:
+
+Expensive Computations: Use useMemo when you have a computationally expensive operation that doesn't need to be recalculated on every render.
+
+Preventing Unnecessary Rendering: It's useful when you want to prevent unnecessary re-renders caused by recomputing values that haven't changed.
+
+Optimizing Performance: If your component renders frequently and you want to optimize its performance by avoiding unnecessary computations.
+
+Memoizing Callbacks: Use useMemo to memoize functions/callbacks passed as props to child components to prevent unnecessary re-renders of the child components.
+
+Avoiding Unnecessary API Calls: Use useMemo when dealing with memoizing the result of API calls to avoid fetching the same data multiple times.

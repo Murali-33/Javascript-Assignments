@@ -1,0 +1,15 @@
+useReducer:
+
+The useReducer hook is a React hook that is used for more complex state logic in functional components.
+It is an alternative to useState and is particularly useful when the state transitions are complex and involve multiple actions.
+The useReducer hook follows the same principles as the Redux library, which is a state management library commonly used with React.
+
+
+
+reducer: A function that specifies how the state should be updated in response to different actions. It takes the current state and an action as arguments and returns the new state.
+
+initialState: The initial state of the component.
+
+state: The current state.
+
+dispatch: A function that is used to dispatch actions to the reducer, triggering state updates.

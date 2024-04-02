@@ -1,0 +1,18 @@
+UseCallback :
+
+Use Case:
+useMemo: Useful for memoizing any value, not just functions. Commonly used for computationally expensive operations.
+useCallback: Specifically designed for memoizing callback functions, often passed as props to child components to prevent
+unnecessary re-renders.
+
+Example:
+useMemo: Memoizing the result of a factorial calculation.
+useCallback: Memoizing an event handler passed to a child component.
+
+Dependencies:
+useMemo: Memoizes based on changes in dependencies, recalculating when any dependency changes.
+useCallback: Memoizes based on changes in dependencies, re-creating the callback when any dependency changes.
+
+The useCallback hook in React is used to memoize callback functions, similar to how useMemo memoizes values. 
+It's particularly useful in scenarios where you have a component that renders child components and you want to 
+prevent unnecessary re-creations of callback functions on every render.

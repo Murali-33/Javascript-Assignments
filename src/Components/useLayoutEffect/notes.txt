@@ -1,0 +1,12 @@
+useEffect:
+ It runs asynchronously after the browser has painted, allowing the browser to perform other
+operations before executing the effect code. It's suitable for most use cases and is less likely to 
+cause performance issues.
+
+useLayoutEffect:
+ It runs synchronously after all DOM mutations but before the browser paints. 
+It's useful when you need to ensure that the DOM is in the correct state immediately after rendering.
+
+useLayoutEffect hook in React is similar to the useEffect hook but runs synchronously after all 
+DOM mutations. This can be useful when you need to perform operations that require access to the 
+DOM layout immediately after the browser has painted.

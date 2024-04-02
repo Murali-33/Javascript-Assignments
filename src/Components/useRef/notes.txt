@@ -1,0 +1,12 @@
+UseREf:
+
+The useRef hook in React is primarily used for accessing and interacting with a mutable object that 
+persists across renders. Unlike state (managed by useState), changes to the ref object do not trigger 
+a re-render of the component. It's often used for accessing and interacting with the DOM directly or
+ for persisting values between renders.
+
+ 
+ Remember that when using useRef, the component won't re-render when the current property is mutated. 
+ If you need to trigger a re-render when the value changes, you should use state (useState). 
+ useRef is especially useful for situations where you need to persist values across renders without
+causing re-renders.
