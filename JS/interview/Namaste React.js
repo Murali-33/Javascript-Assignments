@@ -69,3 +69,18 @@ function App() {
   );
 }
 
+How to Impress the Interviewer?
+Explain the Problem Clearly
+"In React, a single error can crash the entire app. Error Boundaries catch these errors and prevent the app from breaking."
+
+Show Different Ways to Handle Errors
+
+Class-based Error Boundaries (default method)
+react-error-boundary for functional components
+Mention Limitations of Error Boundaries
+❌ Cannot catch errors inside event handlers
+❌ Cannot catch async errors (like setTimeout)
+
+Bonus: Mention Future React Developments
+
+React may introduce built-in hooks for error boundaries in the future.
